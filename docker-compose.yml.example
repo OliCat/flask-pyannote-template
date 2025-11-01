@@ -1,0 +1,25 @@
+# Exemple de configuration Docker Compose pour production
+# Copier en docker-compose.yml et ajuster selon vos besoins
+
+version: '3.8'
+
+services:
+  flask_pyannote:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - GUNICORN_WORKERS=4
+      - BIND=0.0.0.0:5000
+      - LOG_LEVEL=info
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+        reservations:
+          memory: 4G
+
