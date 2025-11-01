@@ -47,11 +47,13 @@ Acceptez les conditions d'utilisation:
 - [pyannote/speaker-diarization-3.1](https://huggingface.co/pyannote/speaker-diarization-3.1)
 - [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0)
 
-### 3. Copier les modules nécessaires
+### 3. Modules nécessaires ✅
 
-Assurez-vous d'avoir dans votre projet:
-- `pyannote_isolated.py` - Module d'isolation MPS
-- `pyannote_mps_helper.py` - Helper MPS sécurisé
+Les modules suivants sont **déjà inclus** dans ce template:
+- ✅ `pyannote_isolated.py` - Module d'isolation MPS
+- ✅ `pyannote_mps_helper.py` - Helper MPS sécurisé
+
+**Note:** Ces fichiers sont inclus, plus besoin de les copier depuis un autre projet !
 
 ## 🎯 Utilisation
 

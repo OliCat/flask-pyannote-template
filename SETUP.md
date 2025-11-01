@@ -67,19 +67,13 @@ huggingface-cli login
    - [pyannote/speaker-diarization-3.1](https://huggingface.co/pyannote/speaker-diarization-3.1)
    - [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0)
 
-### 6. Copier les modules nécessaires
+### 6. Modules nécessaires ✅
 
-**Important:** Ce template nécessite deux modules du projet principal:
+**Les modules suivants sont déjà inclus dans le template:**
+- ✅ `pyannote_isolated.py` - Module d'isolation MPS
+- ✅ `pyannote_mps_helper.py` - Helper MPS sécurisé
 
-```bash
-# Depuis le répertoire du template
-cp ../pyannote_isolated.py .
-cp ../pyannote_mps_helper.py .
-```
-
-Ces fichiers doivent être dans le même répertoire que `app.py`.
-
-**Note:** Si vous avez ces fichiers dans un autre emplacement, ajustez les imports dans `app.py` ou créez un package Python.
+Ces fichiers sont dans le même répertoire que `app.py` et sont prêts à l'emploi.
 
 ### 7. Configuration optionnelle
 
@@ -165,7 +159,9 @@ GUNICORN_WORKERS=4 gunicorn -c gunicorn_config.py app:app
 
 - [README.md](README.md) - Documentation principale
 - [TEMPLATE_README.md](TEMPLATE_README.md) - Guide du template
-- [MPS_ISOLATION_GUIDE.md](../MPS_ISOLATION_GUIDE.md) - Guide détaillé sur l'isolation MPS
+- [MPS_ISOLATION_GUIDE.md](MPS_ISOLATION_GUIDE.md) - Guide détaillé sur l'isolation MPS
+- [FLASK_GUNICORN_MPS_GUIDE.md](FLASK_GUNICORN_MPS_GUIDE.md) - Guide Flask/Gunicorn avec MPS
+- [CONTRIBUTING.md](CONTRIBUTING.md) - Guide de contribution
 
 ## ✅ Installation réussie ?
 

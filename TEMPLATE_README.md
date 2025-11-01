@@ -13,19 +13,13 @@ flask_pyannote_template/
 └── docker-compose.yml.example  # Exemple Docker Compose
 ```
 
-## 🔧 Fichiers à copier depuis le projet principal
+## ✅ Modules inclus
 
-Pour utiliser ce template, copiez ces fichiers du projet principal:
+Les modules suivants sont **déjà inclus** dans ce template:
+- ✅ `pyannote_isolated.py` - Isolation MPS via multiprocessing
+- ✅ `pyannote_mps_helper.py` - Helper MPS sécurisé
 
-```bash
-# Depuis le répertoire flask_pyannote_template/
-cp ../pyannote_isolated.py .
-cp ../pyannote_mps_helper.py .
-```
-
-Ces modules sont nécessaires pour:
-- `pyannote_isolated.py`: Isolation MPS via multiprocessing
-- `pyannote_mps_helper.py`: Helper MPS sécurisé
+**Plus besoin de copier depuis un autre projet !** 🎉
 
 ## ⚡ Installation rapide
 
